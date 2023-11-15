@@ -1,0 +1,795 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-image: url("../pictures/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.sidebar {
+  background-color: rgb(14, 22, 24);
+}
+
+.formal {
+  -webkit-box-shadow: -2px -0.5px 16px 6.5px #e59b3b;
+  -moz-box-shadow: -2px -0.5px 16px 6.5px #e59b3b;
+  box-shadow: -2px -0.5px 16px 6.5px #e59b3b;
+}
+.icons {
+  width: 30%;
+  height: 30%;
+}
+.nav-link:hover {
+  color: #9c5e0c;
+}
+.nav-icon {
+  width: 6%;
+  height: 6%;
+  margin-right: 20px;
+  margin-left: 100px;
+  margin-top: 2.7%;
+}
+
+/*-----------------------------------  Cube  -----------------------------------------*/
+.cube-container {
+  width: 150px;
+  height: 150px;
+  perspective: 800px;
+  margin: 50px auto;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 8s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: rgb(214, 21, 21);
+  font-size: 18px;
+  text-align: center;
+  line-height: 200px;
+  background: transparent;
+  opacity: 0.9;
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      #ff6b6b,
+      #355c7d,
+      #557d35,
+      #cfcf16,
+      #a51f1f
+    )
+    1;
+  box-shadow: 0 0 100px rgba(245, 8, 8, 0.8);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube-container:hover .cube {
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* ------------------------- Get Started Button Hover ----------------------------------- */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border-radius: 1.625rem;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 0;
+  background-color: #c08c48;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: orange;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/*=================================================== Main content =====================================================*/
+
+.content {
+  background-color: rgb(51, 52, 53);
+  margin-top: 9%;
+  margin-right: 0%;
+}
+
+/*--------------- Home section -----------------------*/
+.home {
+  height: 500px;
+  width: 100%;
+  color: #e59b3b;
+}
+
+.home-image-con {
+  margin-top: 9%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.home-image {
+  width: 60%;
+  height: 75%;
+}
+
+/*--------------- Motto section -----------------------*/
+.motto {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+
+/*--------------- Skills section -----------------------*/
+
+.card-for-skills {
+  background-color: transparent;
+  width: 330px;
+  height: 300px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.card-for-skills-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 4%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-for-skills-front {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid orange;
+  border-radius: 1rem;
+}
+
+.list-of-skills {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+/*---------------- About section -----------------------*/
+.monospace {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: orange;
+}
+
+.monospace2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: orange;
+}
+
+.aboutPicture {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* flip image*/
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 60vh;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 480px) {
+  .flip-card {
+    display: none;
+  }
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid orange;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(
+    120deg,
+    bisque 60%,
+    rgb(255, 231, 222) 88%,
+    rgb(255, 211, 195) 40%,
+    rgba(255, 127, 80, 0.603) 48%
+  );
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(
+    120deg,
+    rgb(255, 174, 145) 30%,
+    coral 88%,
+    bisque 40%,
+    rgb(255, 185, 160) 78%
+  );
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*---------------- Porfolio section --------------------*/
+
+.portfolioPicture {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.card {
+  width: 310px;
+  height: 430px;
+  border-radius: 5px;
+  background: rgb(26, 25, 25);
+  position: relative;
+  padding: 1.8rem;
+  border: 1px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+.text-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card:hover {
+  border-color: orange;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+/*---------------- Education section --------------------*/
+
+.schoolImage {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+}
+
+.vscode-font-style {
+  font-size: 15px;
+}
+/*---------------- Work section --------------------*/
+
+.imagesize {
+  width: 300px;
+  height: 200px;
+}
+
+/*---------------- Contact section --------------------*/
+.cardcontact {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: orange;
+}
+
+.form .group input:focus + label,
+.form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: orange;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  width: 20%;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: rgb(165, 110, 8);
+}
+
+/*================================================== Responsiveness ====================================================*/
+
+/*------------------- Small Screen ----------------------*/
+
+@media (max-width: 500px) {
+  .img-fluid {
+    display: none;
+  }
+  .navbar-nav-scroll {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list-inline-item {
+    flex: 0 0 30%;
+    text-align: center;
+  }
+
+  .collapse {
+    background-color: rgb(51, 52, 53);
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-link:hover {
+    background-color: rgb(100, 67, 5);
+  }
+  .navbar-nav {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cube-container {
+    display: none;
+  }
+  .homeMessage {
+    margin-top: 0;
+  }
+
+  .home-image {
+    width: 250px;
+    height: 250px;
+  }
+  .home-image-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hposition {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    background-color: rgb(51, 52, 53);
+    width: 75%;
+  }
+
+  .hposition h3 {
+    font-size: 18px;
+  }
+
+  .home-message-container {
+    text-align: center;
+  }
+
+  .motto {
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0;
+    border-radius: 1rem;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+
+  .aboutPicture {
+    display: none;
+  }
+
+  .aboutHobbies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+
+  .col-4 {
+    display: none;
+  }
+
+  .aboutMessage p {
+    font-size: 12px;
+  }
+  td {
+    font-size: 13px;
+  }
+}
+
+/*------------------- Medium Screen ----------------------*/
+
+@media (min-width: 501px) and (max-width: 992px) {
+  .navbar-nav-scroll {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .list-inline-item {
+    flex: 0 0 30%;
+    text-align: center;
+  }
+
+  .collapse {
+    background-color: rgb(51, 52, 53);
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-link:hover {
+    background-color: rgb(100, 67, 5);
+  }
+  .navbar-nav {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .collapse {
+    margin-left: 5%;
+  }
+
+  .hposition {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    background-color: rgb(51, 52, 53);
+    width: 75%;
+  }
+
+  .hposition h1 {
+    font-size: 20px;
+  }
+  .hposition h3 {
+    font-size: 20px;
+  }
+
+  .cube-container {
+    display: none;
+  }
+
+  .flex-md-row {
+    flex-direction: row;
+  }
+
+  .flex-md-column {
+    flex-direction: row;
+  }
+
+  .home-image-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .aboutMessage {
+    padding: 5px;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+  .aboutHobbies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+  .col-4 {
+    display: none;
+  }
+
+  .hobbiesPicture {
+    display: none;
+  }
+  .medium {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cardcontact {
+    width: 75%;
+  }
+}
+
+/*------------------- Large Screen ----------------------*/
+@media (min-width: 993px) and (max-width: 2000px) {
+  .navbar-nav {
+    margin-left: 48%;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 999;
+}
+.show {
+  bottom: 20px;
+}
