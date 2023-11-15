@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Information System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/portfolio.css">
+    <link rel="stylesheet" href="custom/loader.css">
+</head>
+
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <div class="container bg-warning">
+        <div class="row content">
+            <h3 class="text-center p-5 text-warning">Library Management System</h3>
+            <p class="p-5">During my second year of college in the "IPT 1" course, I developed a Library management
+                system comprising login, search, home, add book, borrow book, return book, book records, and data
+                interfaces, allowing authorized users to efficiently manage library resources, search for materials, add
+                new items, handle checkouts and returns, access detailed book information, and maintain the system's
+                data.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="col">
+                    <h6>Page 1</h6>
+                    <img class="image" src="librarysystem/Login.JPG" alt="Login">
+                    <p class="p-5">Login - This is where the admin can log in to their account.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 2</h6>
+                    <img class="image" src="librarysystem/Home.JPG" alt="Home">
+                    <p class="p-5">Home - This is the base interface, or the main dashboard.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 3</h6>
+                    <img class="image" src="librarysystem/Home-addbook.JPG" alt="Addbook">
+                    <p class="p-5">Add book - The admin can add books to the database based on the books that are in the
+                        library.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 4</h6>
+                    <img class="image" src="librarysystem/Home-borrow.JPG" alt="Borrow">
+                    <p class="p-5">Borrow Book - This is where the borrowing of books happens, and the admin will fill
+                        up the necessary information.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 5</h6>
+                    <img class="image" src="librarysystem/Home-return.JPG" alt="Return">
+                    <p class="p-5">Return book - This is where the admin can modify the data and set the book as
+                        returned.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 6</h6>
+                    <img class="image" src="librarysystem/Home-records.JPG" alt="Records">
+                    <p class="p-5">Book Records - Displays all books so that the admin can archive them.</p>
+                </div>
+                <div class="col">
+                    <h6>Page 7</h6>
+                    <img class="image" src="librarysystem/Home-data.JPG" alt="Data">
+                    <p class="p-5">Data - Collection of borrowed and returned books.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="text-decoration-none text-dark px-4 py-3 bg-warning" href="index.html#portfolio">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.onreadystatechange = function () {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            if (document.readyState === 'complete') {
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 5000);
+            }
+        };
+    </script>
+</body>
+
+</html>

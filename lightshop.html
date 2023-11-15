@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Light Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/portfolio.css">
+    <link rel="stylesheet" href="custom/loader.css">
+
+</head>
+
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+    </div>
+    <div class="container bg-warning">
+        <div class="row content">
+            <h3 class="text-center p-5 text-warning">Light Shop E-commerce</h3>
+            <p class="p-5">In the context of my second-year college project for the Web 1, I designed and developed
+                "Light Shop" is a fashionable e-commerce store that offers a diverse range of clothing items to meet the
+                various needs and preferences of its customers. The store is well-known for its extensive collection of
+                clothing items, which includes jeans, shorts, t-shirts, sweaters, vests, coats, and hoodies.</p>
+
+            <h4 class="p-5 text-warning">Dash Board</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <h6>Page 1</h6>
+                    <img class="image" src="lightshop/home1.jpg" alt="home1">
+                    <p class="p-5">Home interface</p>
+                </div>
+                <div class="col">
+                    <h6>Page 2</h6>
+                    <img class="image" src="lightshop/home2.jpg" alt="home2">
+                    <p class="p-5">Featured Clothes</p>
+                </div>
+                <div class="col">
+                    <h6>Page 3</h6>
+                    <img class="image" src="lightshop/home3.jpg" alt="home3">
+                    <p class="p-5">Model</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h4 class="p-5 text-warning">Shop</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <h6>Page 1</h6>
+                    <img class="image" src="lightshop/shop1.jpg" alt="shop1">
+                    <p class="p-5">First Page with navigation</p>
+                </div>
+                <div class="col">
+                    <h6>Page 2</h6>
+                    <img class="image" src="lightshop/shop2.jpg" alt="shop2">
+                    <p class="p-5">Jeans Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 3</h6>
+                    <img class="image" src="lightshop/shop3.jpg" alt="shop3">
+                    <p class="p-5">Short Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 4</h6>
+                    <img class="image" src="lightshop/shop4.jpg" alt="shop4">
+                    <p class="p-5">T-shirts Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 5</h6>
+                    <img class="image" src="lightshop/shop5.jpg" alt="shop5">
+                    <p class="p-5">Sweater Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 6</h6>
+                    <img class="image" src="lightshop/shop6.jpg" alt="shop6">
+                    <p class="p-5">Vest Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 7</h6>
+                    <img class="image" src="lightshop/shop7.jpg" alt="shop7">
+                    <p class="p-5">Coat Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 8</h6>
+                    <img class="image" src="lightshop/shop8.jpg" alt="shop8">
+                    <p class="p-5">Hoodie Section</p>
+                </div>
+                <div class="col">
+                    <h6>Page 9</h6>
+                    <img class="image" src="lightshop/cart.jpg" alt="cart">
+                    <p class="p-5">Cart where the product is stored when the 'Add to Cart' button was clicked.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a class="text-decoration-none text-dark px-4 py-3 bg-warning" href="index.html#portfolio">Back</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.onreadystatechange = function () {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            if (document.readyState === 'complete') {
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 5000);
+            }
+        };
+    </script>
+</body>
+</html>

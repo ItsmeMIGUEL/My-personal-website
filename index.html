@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="custom/loader.css"> -->
+</head>
+<body>
+   
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container-fluid">
+            <h4 class="text-light" id="top">My Personal Web</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="navbar-toggler-icon" src="icons/hamburger.jpg" alt="Hamburger">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; ">
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#motto" data-section="motto">Motto</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#skills" data-section="skils">Skills</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#portfolio" data-section="portfolio">Portfolio</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#education" data-section="education">Education</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#hobbies" data-section="hobbies">Hobbies</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#experience" data-section="experience">Experience</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="nav-link text-warning" href="#contact" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    
+    <main>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <!-- Home Section -->
+            <div id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex flex-column flex-md-column flex-lg-row">
+                            <div class="col hposition order-2 order-md-2 order-lg-1 p-1">
+                                <div class="cube-container col col-sm-d-none">
+                                    <div class="cube">
+                                        <div class="face front">HTML</div>
+                                        <div class="face back">CSS</div>
+                                        <div class="face right">JAVASCRIPT</div>
+                                        <div class="face left">PHP</div>
+                                        <div class="face top">PYTHON</div>
+                                        <div class="face bottom">JAVA</div>
+                                    </div>
+                                </div>
+
+                                <h3 class="text-light fs-lg " ><b>Hey there, I am Jose Miguel Arcuino</b></h3>
+                                <p class="text-warning">Bachelors of Science in Information Technology Student</p>
+                                <button class="learn-more">
+                                    <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                    </span>
+                                    <span class="button-text"><a class="text-decoration-none text-dark" href="#motto">GET STARTED</a></span>
+                                </button>
+                            </div>
+                            <div class="col order-1 order-lg-2 order-md-1 home-image-con">
+                                <img src="pictures/formal-no-BG.png" alt="Formal" class="formal home-image rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Motto Section -->
+            <div id="motto">
+                <div data-aos="zoom-in">
+                    <div id="blur" style="position: relative; width: 100%; height: 500px;">
+                        <h2 class="text-center pt-5 monospace">MOTTO</h2>
+                        <div class="border border-warning p-5 motto position-absolute col-lg-4 col-md-6 col-sm-8 col-10">
+                            <h4>All our dreams can come true if we have the courage to pursue them.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <a class="back-to-top text-light btn img-fluid" href="#top"><img src="icons/uparrow.png" alt=""></a>
+            </div>
+            <!-- About Section -->
+            <div data-aos="fade-left">
+                <div id="about">
+                    <div class="container my-5">
+                        <h2 class="text-center p-5 monospace"><b>ABOUT ME</b></h2>
+                        <div class="row aboutContainer">
+                            <div class="col-4 order-1">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="pictures/aboutPicture.jpg" alt="About Picture" class="aboutPicture ">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <img src="pictures/IMG20211204065726_00.jpg" alt="About Picture" class="aboutPicture ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 order-2 border border-warning aboutMessage p-sm-3 p-lg-5">
+                                <p>I am a student at Bulacan Agricultural State College (BSC), presently enrolled in the
+                                    Bachelors of Science in Information Technology. I'm a driven and committed person with a solid
+                                    foundation in web design
+                                    and development.
+                                </p>
+                                <br>
+                                <ul class="list-unstyled m-4">
+                                    <li>Name: Jose Miguel Arcuino</li> <br>
+                                    <li>Age: 21</li><br>
+                                    <li>Sex: Male</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="centered-content" class="d-flex align-items-center justify-content-center">
+            <div id="skills">
+                <div class="container my-5">
+                    <h2 class="text-center p-5 monospace"><b>Skills</b></h2>
+                    <div data-aos="fade-right" class="row p-0 aboutContainer mb-4 d-flex align-items-center justify-content-center g-5">
+                        <div class="col-lg-4 col-md-6 col-sm-12 card-for-skills">
+                            <div class="card-for-skills-inner">
+                                <div class="card-for-skills-front">
+                                    <p class="title text-warning">Front End</p>
+                                    <div class="list-of-skills fs-6">
+                                        <p><img src="icons/html.png" alt="html"> HTML 5</p>
+                                        <p><img src="icons/css-3.png" alt="css"> CSS</p>
+                                        <p><img src="icons/java-script.png" alt="java-script"> JAVASCRIPT</p>
+                                        <p><img src="icons/responsive.png" alt="responsive"> Responsive Design</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 card-for-skills">
+                            <div class="card-for-skills-inner">
+                                <div class="card-for-skills-front">
+                                    <p class="title text-warning">Back End</p>
+                                    <div class="list-of-skills fs-6">
+                                        <p><img src="icons/java.png" alt="java"> JAVA</p>
+                                        <p><img src="icons/python.png" alt="python"> PHYTON</p>
+                                        <p><img src="icons/c-.png" alt="c-"> C++</p>
+                                        <p><img src="icons/sql-server.png" alt="sql server"> SQL</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" class="col-lg-4 col-md-6 col-sm-12 card-for-skills">
+                            <div class="card-for-skills-inner">
+                                <div class="card-for-skills-front">
+                                    <p class="title text-warning">Soft Skills</p>
+                                    <div class="list-of-skills fs-6">
+                                        <p><img src="icons/save-time.png" alt="save time">   Time management</p>
+                                        <p><img src="icons/idea.png" alt="idea">  Problem solving</p>
+                                        <p><img src="icons/decision-making.png" alt="decision">  Decision making</p>
+                                        <p><img src="icons/support.png" alt="support">  Collaboration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Portfolio Section -->
+            <div id="portfolio">
+                <div class="container">
+                    <h2 class="text-center p-5 text-warning monospace" style="margin-top: 12%;"><b>PORTFOLIO</b></h2>
+                    <div class="row d-flex flex-row gap-5 align-items-center justify-content-center">
+                        <div class="card" data-aos="zoom-out-right">
+                            <div class="card-details">
+                                <div class="card__content">
+                                    <p class="text-title text-center text-light">Library Management System</p>
+                                    <div class="text-body">
+                                        <img src="pictures/LibraryProject.JPG" class="card-img-top portfolioPicture" alt="Library Information System">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="card-button"><a class="text-decoration-none text-dark" href="library.html">More info</a></button>
+                        </diV>
+                        <div class="card" data-aos="zoom-out-down">
+                            <div class="card-details">
+                                <div class="card__content">
+                                    <p class="text-title text-center text-light">Light Shop</p>
+                                    <div class="text-body">
+                                        <img src="pictures/LightShopProjectCrop.png" class="card-img-top portfolioPicture" alt="Light Shop">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="card-button"><a class="text-decoration-none text-dark" href="lightshop.html">More info</a></button>
+                        </diV>
+
+                        <div class="card" data-aos="zoom-out-left">
+                            <div class="card-details">
+                                <div class="card__content">
+                                    <p class="text-title text-center text-light">Toko Kopi</p>
+                                    <div class="text-body">
+                                        <img src="pictures/TokoKopi.jpg" class="card-img-top portfolioPicture" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="card-button"><a class="text-decoration-none text-dark" href="tokokopi.html">More info</a></button>
+                        </diV>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div id="education">
+                <div data-aos="fade-right">
+                    <div class="container">
+                        <h2 class="text-center p-5 text-warning monospace" style="margin-top: 12%;"><b>Education</b></h2>
+                        <table class="table table-bordered text-light" style="border: 1px solid orange;">
+                            <thead class="p-3">
+                                <tr>
+                                    <th class="text-warning text-center p-3 text-warning d-none d-sm-table-cell">School Image</th>
+                                    <th class="text-warning text-center p-3 text-warning">School Name</th>
+                                    <th class="text-warning text-center p-3 text-warning">Location</th>
+                                    <th class="text-warning text-center p-3 text-warning">Year Graduated</th>
+                                    <th class="text-warning text-center p-3 text-warning">Visit School</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="schoolImage" src="pictures/Masalipit.jpg" alt="Masalipit"></td>
+                                    <td>Masalipit Elementary School</td>
+                                    <td>Masalipit, San Miguel Bulacan</td>
+                                    <td>2014-2015</td>
+                                    <td><a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100064083162429&mibextid=ZbWKwL">Visit Fb Page</a></td>
+                                </tr>
+                        
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="schoolImage" src="pictures/John J. Russell.jpg" alt="John J. Russell"></td>
+                                    <td>John J. Russell Memorial High School</td>
+                                    <td>Sibul Springs, San Miguel Bulacan</td>
+                                    <td>2019-2020</td>
+                                    <td><a class="text-decoration-none" href="https://www.facebook.com/jjrmhsshs?mibextid=ZbWKwL">Visit Fb Page</a> </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="schoolImage" src="pictures/BASC.jpg" alt="BASC"></td>
+                                    <td>Masalipit Elementary School</td>
+                                    <td>Masalipit, San Miguel Bulacan</td>
+                                    <td>Soon</td>
+                                    <td><a class="text-decoration-none" href="https://www.facebook.com/basc1952?mibextid=ZbWKwL">Visit Fb Page</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies Section -->
+            <div id="hobbies" class="hobbies section ">
+                <div class="container">
+                    <h2 class="text-center p-5 text-warning monospace" style="margin-top: 12%;"><b>Hobbies & Interests</b></h2>
+                        <div class="row p-0 aboutHobbies mb-5" data-aos="fade-left">
+                            <div class="col-2 order-1">
+                                <img src="pictures/playgame.jpg" alt="About Picture" class="aboutPicture hobbiesPicture w-100 h-100">
+                            </div>
+                            <div class="col-10 medium order-2 border border-warning aboutMessage p-sm-3 p-lg-4">
+                                <p>Online gaming is my jam, offering an exciting escape where I can dive into thrilling virtual worlds, test my skills,
+                                    team up with gaming buddies, and experience the rush of competition and win together.
+                                </p>
+                                <ul>
+                                    <li>Mobile Legends Bang Bang</li> <br>
+                                    <li>Clas of Clans</li><br>
+                                    <li>League of Stickman</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row p-0 aboutHobbies mb-5" data-aos="fade-left">
+                            <div class="col-2 order-1">
+                                <img src="pictures/gym.jpg" alt="About Picture" class="aboutPicture hobbiesPicture w-100 h-100">
+                            </div>
+                            <div class="col-10 medium order-2 border border-warning p-2 aboutMessage p-sm-3 p-lg-4">
+                                <p>Exercise is my thing, providing an healthy body where I can break a sweat, stay healthy, and recharge my body and
+                                mind, all while having fun, reaching new fitness goals, and enjoying the journey to a healthier me.
+                                </p>
+                                <ul>
+                                    <li>Planking</li> <br>
+                                    <li>Jogging</li><br>
+                                    <li>Swimming</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row p-0 aboutHobbies mb-5" data-aos="fade-left">
+                            <div class="col-2 order-1">
+                                <img src="pictures/study.jpg" alt="About Picture" class="aboutPicture hobbiesPicture w-100 h-100">
+                            </div>
+                            <div class="col-10 medium order-2 border border-warning p-2 aboutMessage p-sm-3 p-lg-4">
+                                <p>Studying is my game, a rewarding adventure where I can expand my knowledge, challenge my mind, and unlock new knowledge,
+                                all while growing as an individual, achieving academic goals, and embracing the world of learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <!-- Experience Section -->
+            <div id="experience" class="experience section" data-aos="fade-left" >
+                <div class="container">
+                    <div class="sections">
+                        <h2 class="text-center p-5 text-warning monospace" style="margin-top: 12%;"><b>Work Experiences</b></h2>
+                        <table class="table table-bordered text-light" style="border: 1px solid orange;">
+                            <thead>
+                                <tr>
+                                    <th class="text-center p-3 text-warning d-none d-sm-table-cell">Image</th>
+                                    <th class="text-center p-3 text-warning">Company</th>
+                                    <th class="text-center p-3 text-warning">Job</th>
+                                    <th class="text-center p-3 text-warning">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="imagesize" src="pictures/Bounty1.jpg"></td>
+                                    <td>Bounty Farm Fresh</td>
+                                    <td>Wire Installer</td>
+                                    <td>April 2018 - March 2020</td>
+                                </tr>
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="imagesize" src="pictures/farmer.jpg"></td>
+                                    <td>Farmer</td>
+                                    <td>Vegetable Harvester</td>
+                                    <td>January 2018 - December 2020</td>
+                                </tr>
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="imagesize" src="pictures/constractionworker.jpg"></td>
+                                    <td>Construction</td>
+                                    <td>Helper</td>
+                                    <td>May 2020 - August 2021</td>
+                                </tr>
+                                <tr>
+                                    <td class="d-none d-sm-table-cell"><img class="imagesize" src="pictures/harvester.jpg"></td>
+                                    <td>Fernando's Farm</td>
+                                    <td>Rice Harvester</td>
+                                    <td>May 2020 - July 2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Contact Section -->
+            <div data-aos="zoom-in" id="contact" class="contact section pb-5">
+                <h2 class="text-center p-5 text-warning monospace" style="margin-top: 12%;"><b>Get in Touch</b></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="cardcontact col-12 col-sm-6">
+                                <form action="config/function.php" method="POST" class="form">
+                                    <div class="group">
+                                        <input placeholder="‎" name="Fname" type="text" required>
+                                        <label for="name" >Name</label>
+                                    </div>
+                                    <div class="group">
+                                        <input placeholder="‎" type="email" id="email" name="email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="group">
+                                        <textarea placeholder="‎" id="comment" name="comment" rows="5" required></textarea>
+                                        <label for="comment">Comment</label>
+                                    </div>
+                                    <button class="text-center mx-auto " type="submit" name="sendMessage">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-md-4">
+                    <h5 class="text-warning">Contact Information</h5><br>
+                    <p>
+                        <p class="fas fa-map-marker">Masalipit, San Miguel, Bulacan</p>
+                        <p class="fas fa-envelope"><a href="mailto:mjarcuino03@gmail.com">mjarcuino03@gmail.com</a></p> 
+                        <p class="fas fa-phone">09090227422</p>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-warning">Follow Me</h5><br>
+                    <ul class="list-unstyled">
+                        <p><a href="https://github.com/ItsmeMIGUEL/samle.git" target="_blank">GitHub</a></p>
+                        <p><a href="https://www.facebook.com/miguel.arcuino?mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+                        <p><a href="https://instagram.com/jmarcuino?igshid=NzZlODBkYWE4Ng==" target="_blank">Instagram</a></p>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('.nav-link').on('click', function () {
+            $('#offcanvasDarkNavbar').offcanvas('hide');
+        });
+    });
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>  AOS.init();</script>
+<script>
+    document.onreadystatechange = function () {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'flex';
+        if (document.readyState === 'complete') {
+            setTimeout(function () {
+                loader.style.display = 'none';
+            }, 4000);
+        }
+    };
+    // Smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.navbar-nav-scroll a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    let target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+</script>
+
+</body>
+</html>
