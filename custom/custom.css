@@ -631,6 +631,13 @@ button:hover .button-text {
     align-content: center;
     gap: 5px;
   }
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
 
   .aboutPicture {
     display: none;
@@ -643,8 +650,8 @@ button:hover .button-text {
     align-content: center;
     gap: 5px;
   }
-
-  .Sexperience{
+  .eductable {
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -745,7 +752,13 @@ button:hover .button-text {
   .aboutMessage {
     padding: 5px;
   }
-
+  .Sexperience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
   .aboutContainer {
     display: flex;
     flex-wrap: wrap;
