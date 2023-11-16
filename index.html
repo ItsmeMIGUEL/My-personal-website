@@ -391,7 +391,7 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <div class="cardcontact col-12 col-sm-6">
-                                <form action="index.html" method="POST" class="form">
+                                <form action="config/function.php" method="POST" class="form">
                                     <div class="group">
                                         <input placeholder="‎" name="Fname" type="text" required>
                                         <label for="name" >Name</label>
@@ -404,7 +404,7 @@
                                         <textarea placeholder="‎" id="comment" name="comment" rows="5" required></textarea>
                                         <label for="comment">Comment</label>
                                     </div>
-                                    <button onclick="contact()" class="text-center mx-auto " type="submit" name="sendMessage">Submit</button>
+                                    <button class="text-center mx-auto sendMessage" type="submit" name="sendMessage">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -449,11 +449,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>  AOS.init();</script>
 <script>
-    function contact(){
-        if(confirm('Added succesfully')){
-            window.location.href'index.html';
-        }
-    }
     document.onreadystatechange = function () {
         var loader = document.getElementById('loader');
         loader.style.display = 'flex';
