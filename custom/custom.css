@@ -670,6 +670,9 @@ button:hover .button-text {
   td {
     font-size: 13px;
   }
+  .sendMessage{
+    width: 75%:
+  }
 }
 
 /*------------------- Medium Screen ----------------------*/
