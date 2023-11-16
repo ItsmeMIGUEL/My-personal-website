@@ -644,6 +644,14 @@ button:hover .button-text {
     gap: 5px;
   }
 
+  .Sexperience{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+  }
+
   .col-4 {
     display: none;
   }
