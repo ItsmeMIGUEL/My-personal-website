@@ -651,7 +651,8 @@ button:hover .button-text {
     gap: 5px;
   }
   .eductable {
-    width: 95%;
+    max-width:100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
